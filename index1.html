@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Search Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li class="links" style="text-align: left;"><a href="index.html">🏠︎</a></li>
+                    <li><a href="#" class="links">Search Element</a></li>
+                    <li><a href="https://vansh-py.github.io/Atomic-Assistant-pc/index2.html" class="links">View Periodic Table</a></li>
+                    <li><a href="https://vansh-py.github.io/Atomic-Assistant-pc//index3.html" class="links">Atomic Calculator</a></li>
+                    <li><a href="https://vansh-py.github.io/Atomic-Assistant-pc//index4.html" class="links">Atomic Structure</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>How To Use This Assistant</h1>
+            <p>Firstly You have to insert the given Atomic Name or Atomic Symbol or Atomic Number or Mass Number</p>
+            <p>Then this program will show the information about that element while entering input this should be noted that <br> the input you are entering and the same as the content selected in dropbox as if they are different it will now show you any information</p>
+            <span class="search-container">
+                <input type="text" id="search-input" placeholder="Enter Atomic Name, Symbol, Number, or Mass">
+                <select id="search-type">
+                    <option value="atomic-number">Atomic Number</option>
+                    <option value="atomic-name">Atomic Name</option>
+                    <option value="atomic-symbol">Atomic Symbol</option>
+                    <!-- <option value="mass-number">Mass Number</option> -->
+                </select>
+                <button onclick="handleSearch()">Search</button>
+            </span>
+            <div id="result"></div>
+        </main>
+        <footer>
+            <p>Made with <span style="color: red;">❤</span> by Vansh</p>
+            <p>Please rate your experience that will help me a lot</p>
+            <p>You can check out the source code of this project on my <a href="#">GitHub</a></p>
+        </footer>
+    </div>
+    <script>
+        function handleSearch() {
+            const input = document.getElementById('search-input').value;
+            const type = document.getElementById('search-type').value;
+            
+            let url;
+            if (type === 'atomic-number' || type === 'atomic-name' || type === 'atomic-symbol' || type === 'mass-number') {
+                url = `output.html?type=${type}&input=${input}`;
+                window.location.href = url;
+            } else {
+                console.error('Invalid search type:', type);
+            }
+        }
+    </script>
+</body>
+</html>

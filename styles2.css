@@ -1,0 +1,151 @@
+.container{
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+header nav ul li a:hover {
+    color: #FF4500;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #87CEEB;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #CDC7BE;
+    padding: 0.5em 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #CDC7BE;
+    text-align: center;
+}
+
+header nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.none {
+    border: none;
+}
+
+
+table {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: center;
+}
+
+
+td a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.buttons-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Group-specific colors */
+.alkali { background-color: #FF6666; }
+.alkaline { background-color: #FFDEAD; }
+.transition { background-color: #FFD700; }
+.post-transition { background-color: #FFA07A; }
+.metalloid { background-color: #ADFF2F; }
+.non-metal { background-color: #7FFFD4; }
+.noble { background-color: #87CEEB; }
+.lanthanide { background-color: #EE82EE; }
+.actinide { background-color: #DDA0DD; }
+.unknown { background-color: #D3D3D3; }
+
+/* Button colors */
+.btn-alkali { background-color: #FF6666; }
+.btn-alkaline { background-color: #FFDEAD; }
+.btn-transition { background-color: #FFD700; }
+.btn-post-transition { background-color: #FFA07A; }
+.btn-metalloids { background-color: #ADFF2F; }
+.btn-non-metals { background-color: #7FFFD4; }
+.btn-noble { background-color: #87CEEB; }
+.btn-lanthanides { background-color: #EE82EE; }
+.btn-actinides { background-color: #DDA0DD; }
+.btn-unknown { background-color: #D3D3D3; }
+
+.highlight {
+    border: 2px solid #000;
+    filter: opacity(100%);
+}
+
+.other{
+    filter: brightness(30%);
+}
+
+
+footer{
+    background-color: #CDC7BE ;
+    padding: 0.5em 0;
+    text-align: center;
+    font-size: 14px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+
+}
+
+footer p {
+    margin: 0.2em 0;
+    background-color: #CDC7BE 
+}
+
+
+footer a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
